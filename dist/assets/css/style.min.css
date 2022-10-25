@@ -470,6 +470,17 @@ body {
   background-color: #2c31b4;
 }
 
+.stories {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 13px;
+  grid-template-rows: 195px;
+}
+
+.stories__item {
+  background-color: #ccc;
+}
+
 .sidebar {
   width: 300px;
   height: 100vh;
