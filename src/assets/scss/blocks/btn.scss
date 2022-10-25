@@ -27,7 +27,7 @@
     }
 
     &--blue {
-        background-attachment: $blue;
+        background-color: $blue;
         box-shadow: 0 7px 17px -10px rgba($blue, .3);
 
         &:hover {
