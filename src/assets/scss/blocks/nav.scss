@@ -1,0 +1,19 @@
+.nav__list {
+    display: flex;
+}
+
+.nav__link {
+    display: block;
+    padding: 1.5rem 1.5rem;
+
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: $white;
+    text-decoration: none;
+
+    transition: background-color .2s linear;
+
+    &:hover {
+        background-color: $blue;
+    }
+}
