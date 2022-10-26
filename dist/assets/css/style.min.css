@@ -572,9 +572,7 @@ body {
 }
 
 .add-post__file {
-  background-color: #EBEBEB url("assets/images/Add-post-foto.svg") center no-repeat;
-  border-radius: 50%;
-  cursor: pointer;
+  background: #EBEBEB url("../images/Add-post-foto.svg") center no-repeat;
 }
 .add-post__file input {
   display: none;
