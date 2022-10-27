@@ -36,11 +36,6 @@
 
     a {
         color: inherit;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
     }
 
     &--mb0 {
@@ -48,9 +43,16 @@
     }
 }
 
-.post__text {
+.post__description {
     font-size: 1.4rem;
-    color: #D2D2D2 ;
+    color: #D2D2D2;
+}
+
+.post__text {
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+    color: $white;
+    border-bottom: 1px solid #1C1C1C;
 
     h2, h3, h4 {
         margin-bottom: 2rem;
@@ -61,8 +63,40 @@
         font-size: 1.5em;
     }
 
+    h3 {
+        font-size: 1.25em;
+    }
+
+    h4 {
+        font-size: 1.15em;
+    }
+
+    ul, ol {
+        margin-bottom: 2rem;
+    }
+
+    ol {
+        list-style: decimal;
+        list-style-position: inside;
+    }
+
     p {
         margin-bottom: 2rem;
+    }
+
+    a {
+        color: $blue;
+    }
+
+    table {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -79,11 +113,6 @@
 
     a {
         color: inherit;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
     }
 }
 
