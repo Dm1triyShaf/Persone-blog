@@ -122,7 +122,8 @@
         
             <div class="sidebar__footer">
                 <a class="btn  btn--red" href="#">
-                    Мои работы</a>
+                Мои работы </a>
+                
                 <button class="btn  btn--blue" type="button">
                     Написать мне</button>
             </div>
@@ -211,7 +212,7 @@
                         </div> <!--!/post__text-->
                 
                         <div class="related">
-                            <h3 class="related__title">Интересно почитать</h3>
+                            <h3 class="post__subtitle">Интересно почитать</h3>
                 
                             <ul class="related__list">
                                 <li class="related__list-item">
@@ -252,17 +253,79 @@
                             </ul>
                         </div><!--!/related-->
                 
-                        <div class="comments"></div>
-                        <h3 class="comments__title">Обсужнение</h3>
+                        
+                        <h3 class="post__subtitle">Обсужнение</h3>
                 
                         <form class="form" action="/" method="post">
                             <div class="form__group">
                                 <textarea class="form__control 
-                                form__control--textarea"
-                                name="comment-text" placeholder="Текст комментария"></textarea>
+                                    form__control--textarea"
+                                    name="comment-text" 
+                                    placeholder="Текст комментария"></textarea>
+                                <span class="form__line"></span>
                             </div>
-                            <button class="btn btn--blue">Отправить</button>
+                            <button class="btn  btn--blue  btn--rounded  btn--sm" 
+                                type="submit">Отправить</button>
                         </form>
+                
+                        <ul class="comments">
+                             <li class="commenst__item">
+                                <div class="comments__header">
+                                    <img class="comments__avatar" src="assets/images/avatar.webp" alt="avatar">
+                                    <div class="comments__author">
+                                        <div class="comments__name">Юлия Шафалюк</div>
+                                        <time class="comments__pupdate" datetime="2022-08-03">3 месяца назад</time>
+                                    </div>
+                                </div>
+                                <div class="comments__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor 
+                                        lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas.
+                                         Fusce arcu sodales lacinia eu auctor nunc nam id. 
+                                        Diam sit sed volutpat massa. Egestas ornare vel volutpat.</div>
+                                        <button class="comments__reply" 
+                                        type="button">Ответить</button>
+                
+                                        <ul class="comments">
+                                            <li class="commenst__item">
+                                               <div class="comments__header">
+                                                   <img class="comments__avatar" src="assets/images/avatar.webp" alt="avatar">
+                                                   <div class="comments__author">
+                                                       <div class="comments__name">Юлия Шафалюк</div>
+                                                       <time class="comments__pupdate" datetime="2022-08-03">3 месяца назад</time>
+                                                   </div>
+                                               </div>
+                                               <div class="comments__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                       Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor 
+                                                       lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas.
+                                                        Fusce arcu sodales lacinia eu auctor nunc nam id. 
+                                                       Diam sit sed volutpat massa. Egestas ornare vel volutpat.</div>
+                                                       <button class="comments__reply" 
+                                                       type="button">Ответить</button>
+                                                       
+                                            </li>
+                                       </ul>
+                                       
+                             </li>
+                        </ul>
+                        <ul class="comments">
+                             <li class="commenst__item">
+                                <div class="comments__header">
+                                    <img class="comments__avatar" src="assets/images/tLfPhU53rSQTgiLz8vAQMw7kdQPJUv1mF--5oBT5o_Rm9UDtJa3lOwyGfiYAOwzKpYi6PmRKrZigjrwyjSmILnAN.jpg" alt="avatar">
+                                    <div class="comments__author">
+                                        <div class="comments__name">Юлия Шафалюк</div>
+                                        <time class="comments__pupdate" datetime="2022-08-03">3 месяца назад</time>
+                                    </div>
+                                </div>
+                                <div class="comments__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor 
+                                        lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas.
+                                         Fusce arcu sodales lacinia eu auctor nunc nam id. 
+                                        Diam sit sed volutpat massa. Egestas ornare vel volutpat.</div>
+                                        <button class="comments__reply" 
+                                        type="button">Ответить</button>
+                                       
+                             </li>
+                        </ul>
                 
                     </div><!--!/post__contant-->
                 </article>
