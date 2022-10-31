@@ -958,3 +958,40 @@ a:hover {
   color: #828282;
   font-size: 1.2rem;
 }
+
+.comments {
+  margin-top: 3rem;
+}
+
+.comments__title {
+  margin-bottom: 2rem;
+  font-style: 1.6rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.form__group {
+  margin-bottom: 1.5rem;
+}
+
+.form__control {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #3f3f3f;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: inherit;
+  font-size: 1.4rem;
+  color: #fff;
+}
+.form__control::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.form__control--textarea {
+  height: 3rem;
+  overflow: hidden;
+  resize: none;
+}
