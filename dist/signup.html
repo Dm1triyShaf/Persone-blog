@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
-    <title>works</title>
+    <title>signup</title>
 </head>
 
 <body>
@@ -132,71 +132,40 @@
         <main class="main">
             <div class="container">
                 
-                <h1 class="page__title">Мои работы</h1>
                 
-                <article class="work">
-                    <div class="work__previev">
-                        <img src="assets/images/Rectangle 21.jpg" alt="">
+                <h1 class="page__title page__title--center">Регистрация</h1>
+                
+                <form class="form form--auth" action0="/" method="post">
+                    <div class="form__group form__group--md">
+                        <input class="form__control" type="text" 
+                        placeholder="Ваше имя">
+                        <span class="form__line"></span>
                     </div>
-                    <div class="work__content">
-                        <h2 class="work__title">
-                            <a href="#" target="_blank">mogo.com</a>
-                        </h2>
-                        <div class="work__description">
-                            <p>Lorem ipsum dolor sit 
-                                amet,consectetur adipiscing elit. 
-                                Elementum volutpat orci turpis urna. 
-                                Et vestibulum, posuere tortor lacinia sit. 
-                                Sagittis porttitor orci auctor in at tincidunt
-                                arcu egestas. Fusce arcu sodales lacinia eu auctor 
-                                nunc nam id. Diam sit sed volutpat massa. 
-                                Egestas ornare vel volutpat.</p>
+                    <div class="form__group form__group--md">
+                        <input class="form__control" type="email" 
+                        placeholder="Ваш e-mail">
+                        <span class="form__line"></span>
+                    </div>
+                    <div class="form__group form__group--md">
+                        <input class="form__control" type="password" 
+                        placeholder="Пароль">
+                        <span class="form__line"></span>
+                    </div>
+                    
+                    <div class="form__footer form__footer--center">
+                        <div class="form__group form__group--md">
+                            <button class="btn btn--blue btn--rounded btn--sm">Регистрация</button>
                         </div>
-                        <ul class="tags">
-                            <li class="tags__item">Дизайн</li>
-                            <li class="tags__item">Создание сайта</li>
-                            <li class="tags__item">SMM</li>
+                        <ul class="form__footer-list">
+                            <li>
+                                <a href="signin.html">Войти</a>
+                            </li>
+                            <li>
+                                <a href="reset.html">Восстановить</a>
+                            </li>
                         </ul>
-                
-                        <div class="work__footer">
-                            <a class="btn btn--blue btn--rounded btn--sm" 
-                            href="#" target="_blank">Перейти на сайт</a>
-                        </div>
                     </div>
-                
-                </article>
-                
-                
-                <article class="work">
-                    <div class="work__previev">
-                        <img src="assets/images/Rectangle 22.jpg" alt="">
-                    </div>
-                    <div class="work__content">
-                        <h2 class="work__title">
-                            <a href="#" target="_blank">mogo.com</a>
-                        </h2>
-                        <div class="work__description">
-                            <p>Lorem ipsum dolor sit 
-                                amet,consectetur adipiscing elit. 
-                                Elementum volutpat orci turpis urna. 
-                                Et vestibulum, posuere tortor lacinia sit.</p>
-                        </div>
-                        <ul class="tags">
-                            <li class="tags__item">Дизайн</li>
-                            <li class="tags__item">Создание сайта</li>
-                            <li class="tags__item">SMM</li>
-                            <li class="tags__item">Дизайн</li>
-                            <li class="tags__item">Создание сайта</li>
-                            <li class="tags__item">SMM</li>
-                        </ul>
-                
-                        <div class="work__footer">
-                            <a class="btn btn--blue btn--rounded btn--sm" 
-                            href="#" target="_blank">Перейти на сайт</a>
-                        </div>
-                    </div>
-                
-                </article>
+                </form>
             </div>
         </main>
     </div>
