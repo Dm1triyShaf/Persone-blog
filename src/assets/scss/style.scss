@@ -1,6 +1,8 @@
-@import "src/assets/scss/vars";
-@import "src/assets/scss/vendor/reset";
+@import "vars";
+@import "mixins";
+@import "vendor/reset";
 
+    
 html {
     font-size: 62.5%; 
 }

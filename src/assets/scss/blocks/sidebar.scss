@@ -12,6 +12,10 @@
     top: 0;
     left: 0;
     z-index: $z-index-sidebar;
+
+    @include breakpoint($tablet-bp) {
+        display: none;
+    }
 }
 
 .sidebar__header {

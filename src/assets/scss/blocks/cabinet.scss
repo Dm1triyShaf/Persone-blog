@@ -4,6 +4,10 @@
 
 .cabinet__form {
     width: 340px;
+
+    @media (max-width: $tablet-bp) {
+
+    }
     
 }
 
