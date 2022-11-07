@@ -775,6 +775,11 @@ a:hover {
   left: 0;
   z-index: 1000;
 }
+@media (max-width: 991px) {
+  .sidebar {
+    display: none;
+  }
+}
 
 .sidebar__header {
   height: 180px;
@@ -1186,7 +1191,6 @@ a:hover {
 .cabinet__form {
   width: 340px;
 }
-
 .cabinet__avatar {
   flex-grow: 1;
   padding-left: 11rem;
