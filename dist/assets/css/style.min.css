@@ -806,6 +806,11 @@ a:hover {
 .main {
   padding: 10rem 0 8rem 300px;
 }
+@media (max-width: 991px) {
+  .main {
+    padding-left: 0;
+  }
+}
 
 .container {
   max-width: 70rem;
