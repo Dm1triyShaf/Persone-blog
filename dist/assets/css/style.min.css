@@ -818,6 +818,11 @@ a:hover {
   height: 100%;
   object-fit: cover;
 }
+@media (max-width: 991px) {
+  .sidebar__header {
+    height: 100px;
+  }
+}
 
 .sidebar__content {
   padding: 0 2rem;
@@ -861,6 +866,12 @@ a:hover {
   border: 2px solid #fff;
   box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
+}
+@media (max-width: 991px) {
+  .profile__avatar {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
 }
 
 .profile__name {
