@@ -1,4 +1,5 @@
 .burger {
+    display: none;
     width: 3rem;
     height: 2rem;
     padding: 0;
@@ -70,6 +71,10 @@
             transform:
             rotate(-45deg);
         }
+    }
+
+    @include breakpoint($tablet-bp) {
+        display: block;
     }
 
 }

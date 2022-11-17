@@ -2,10 +2,18 @@
     @include breakpoint($tablet-bp) {
         display: none;
     }
+
+    &--mobile {
+        display: block;
+    }
 }
 
 .nav__list {
     display: flex;
+
+    @include breakpoint($tablet-bp) {
+        flex-direction: column;
+    }
 }
 
 .nav__item {
@@ -52,7 +60,12 @@
             position: absolute;
             top: 50%;
             right: 1.35rem;
-            transform: translate(-50%);
+            transform: translateY(-50%);
         }
+    }
+
+    @include breakpoint($tablet-bp) {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
