@@ -14,8 +14,13 @@
     z-index: $z-index-sidebar;
 
     @include breakpoint($tablet-bp) {
-        top: 4rem;
+        display: flex;
+        flex-direction: column;
         height: calc(100vh - 4rem);
+        padding-bottom: 1.5rem;
+        overflow: auto;
+
+        top: 4rem;
         transform: 
         translateX(-100%);
         transition: 
@@ -46,6 +51,10 @@
 
 .sidebar__content {
     padding: 0 2rem;
+
+    @include breakpoint($tablet-bp) {
+        flex-grow: 1;
+    }
 }
 
 .sidebar__footer {

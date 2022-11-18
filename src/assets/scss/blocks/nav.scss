@@ -1,10 +1,15 @@
 .nav {
-    @include breakpoint($tablet-bp) {
+    &--mobile {
         display: none;
+        margin: 3rem 0;
     }
 
-    &--mobile {
-        display: block;
+    @include breakpoint($tablet-bp) {
+        display: none;
+
+        &--mobile {
+            display: block;
+        }
     }
 }
 
@@ -27,6 +32,14 @@
 
         > .subnav {
             display: block;
+        }
+    }
+
+    @include breakpoint($tablet-bp) {
+        &:hover {
+            .nav__link {
+                background: none;
+            }
         }
     }
 }
@@ -67,5 +80,7 @@
     @include breakpoint($tablet-bp) {
         padding-left: 0;
         padding-right: 0;
+
+        font-size: 1.6rem;
     }
 }

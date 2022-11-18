@@ -38,5 +38,16 @@
         darken($blue, 5%);
         text-decoration: none;
     }
+
+    @include breakpoint($tablet-bp) {
+        padding-left: 0;
+        padding-right: 0;
+
+        font-size: 1.5rem;
+
+        &:hover {
+            background: none;
+        }
+    }
 }
 
