@@ -530,6 +530,14 @@ a:hover {
 .search__input::placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
+@media (max-width: 991px) {
+  .search__input {
+    height: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+}
 
 .subnav {
   display: none;
@@ -909,6 +917,7 @@ a:hover {
 }
 @media (max-width: 991px) {
   .main {
+    padding-top: 7rem;
     padding-left: 0;
   }
 }
