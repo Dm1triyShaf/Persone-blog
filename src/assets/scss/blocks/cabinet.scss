@@ -1,12 +1,16 @@
 .cabinet {
     display: flex;
+
+    @include breakpoint($mobile-bp) {
+        flex-direction: column;
+    }
 }
 
 .cabinet__form {
     width: 340px;
 
-    @media (max-width: $tablet-bp) {
-
+    @include breakpoint($mobile-bp) {
+        order: 2;
     }
     
 }
@@ -21,6 +25,12 @@
         width: 15rem;
         height: 15rem;
         display: block;
+    }
+
+    @include breakpoint($mobile-bp) {
+        padding-left: 0;
+        order: 1;
+        margin-bottom: 2rem;
     }
 }
 

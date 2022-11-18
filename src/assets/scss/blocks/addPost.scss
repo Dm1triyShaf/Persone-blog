@@ -6,6 +6,10 @@
     box-shadow: 0 15px 25px
     rgba($black, .45);
     border-radius: 5px;
+
+    @include breakpoint($mobile-bp) {
+        padding: 1.5rem;
+    }
     
 }
 
@@ -34,10 +38,14 @@
 }
 
 .add-post__form-actions {
-    width: 120px;
+    width: 12rem;
     flex-shrink: 0;
     display: flex;
     justify-content: space-between;
+
+    @include breakpoint($tablet-bp) {
+        width: 9rem;
+    }
 }
 
 .add-post__file,
@@ -52,6 +60,11 @@
 
     transition: background-color 
     .2s linear;
+
+    @include breakpoint($tablet-bp) {
+        width: 3.4rem;
+        height: 3.4rem;
+    }
 }
 
 .add-post__file {
@@ -67,14 +80,30 @@
         background-color:
         darken(#EBEBEB, 10%);
     }
+
+    @include breakpoint($mobile-bp) {
+        background-size: 18px;
+    }
 }
 
 .add-post__send {
+    margin-left: 1.5rem;
+
+    font-size: 0;
+    color: transparent;
+
+    background: $blue 
+    url("../images/add-post-ff.svg")
+    center no-repeat;
     background-color: $blue;
 
     &:hover {
         background-color:
         darken($blue, 10%);
+    }
+
+    @include breakpoint($mobile-bp) {
+        background-size: 15px;
     }
 }
 
