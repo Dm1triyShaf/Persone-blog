@@ -15,7 +15,7 @@
   \********************************/
 /***/ (function() {
 
-eval("console.log('modal');\r\n\n\n//# sourceURL=webpack://brainscloud/./src/assets/js/modal.js?");
+eval("const modalBtn = document.querySelectorAll('[data-modal');\r\nconst body = document.body;\r\nconst modalClose = document.querySelectorAll('.modal__close');\r\n\r\nmodalBtn.forEach(item => {\r\n    item.addEventListener('click', event => {\r\n        let $this = event.target;\r\n        let modalId = $this.getAttribute('data-modal');\r\n        let modal = document.getElementById(modalId);\r\n\r\n        modal.classList.add('show');\r\n        body.classList.add('no-scroll');\r\n        \r\n\r\n    });\r\n});\r\n\r\nmodalClose.forEach(item => {\r\n    item.addEventListener('click', event => {\r\n        let currentModal = event.currentTarget.closest('.modal');\r\n\r\n        currentModal.classList.remove('show');\r\n        body.classList.remove('no-scroll');\r\n    });\r\n}); \n\n//# sourceURL=webpack://brainscloud/./src/assets/js/modal.js?");
 
 /***/ })
 
