@@ -1755,6 +1755,11 @@ a:hover {
     z-index: 1010;
 }
 
+.modal.show {
+    display: -ms-flexbox;
+    display: flex;
+}
+
 .modal__content {
     width: 100%;
     max-width: 500px;
