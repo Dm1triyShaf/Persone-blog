@@ -9,11 +9,14 @@ modalBtn.forEach(item => {
         let $this = event.target;
         let modalId = $this.getAttribute('data-modal');
         let modal = document.getElementById(modalId);
+        let modalContant = modal.querySelector('.modal__content');
+
+        modalContant.addEventListener('click', event => {
+            event.stopPropagation();
+        }); 
 
         modal.classList.add('show');
         body.classList.add('no-scroll');
-        
-
     });
 });
 

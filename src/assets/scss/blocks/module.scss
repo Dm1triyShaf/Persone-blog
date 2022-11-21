@@ -16,6 +16,7 @@
     &.show {
         display: flex;
     }
+
 }
 
 .modal__content {
@@ -29,6 +30,11 @@
 
     &--contact {
         padding-bottom: 2.5rem;
+    }
+
+    &--story {
+        padding: 0;
+        background: none;
     }
 }
 
