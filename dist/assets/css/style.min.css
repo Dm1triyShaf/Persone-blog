@@ -1571,6 +1571,11 @@ a:hover {
   text-decoration: none;
 }
 
+.modal__video {
+  display: block;
+  margin: 0 auto;
+}
+
 .burger {
   display: none;
   width: 3rem;
