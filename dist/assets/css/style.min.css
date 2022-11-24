@@ -381,17 +381,6 @@ a:hover {
   .show-sidebar .page {
     position: relative;
   }
-  .show-sidebar .page:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
-  }
 }
 
 .page__title {
@@ -401,6 +390,19 @@ a:hover {
 }
 .page__title--center {
   text-align: center;
+}
+
+@media (max-width: 991px) {
+  .page__mask {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
 }
 
 .header {
@@ -660,13 +662,13 @@ a:hover {
 
 .add-post__form {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .add-post__textarea {
   display: block;
   flex-grow: 1;
-  height: 26px;
+  height: 34px;
   overflow: hidden;
   border: none;
   background: transparent;
@@ -1528,6 +1530,9 @@ a:hover {
   position: relative;
   background-color: #202020;
   border-radius: 5px;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
 }
 .modal__content--contact {
   padding-bottom: 2.5rem;

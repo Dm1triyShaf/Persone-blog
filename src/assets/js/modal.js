@@ -17,6 +17,13 @@ modalBtn.forEach(item => {
 
         modal.classList.add('show');
         body.classList.add('no-scroll');
+
+        setTimeout(()=>  {
+            modalContant.style.transform = 'none';
+            modalContant.style.opacity = '1';
+        }, 2);
+
+        
     });
 });
 
@@ -36,7 +43,12 @@ modal.forEach(item => {
     });
 }); 
 
-function closeModal(currentmodal) {
-    currentmodal.classList.remove('show');
-    body.classList.remove('no-scroll');
+function closeModal(currentModal) {
+    let modalContant = currentModal.querySelector('.modal__content');
+    modalContant.removeAttribute('style');
+
+        setTimeout(()=> {
+            currentModal.classList.remove('show');
+            body.classList.remove('no-scroll');
+    }, 250)
 }
